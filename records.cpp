@@ -63,12 +63,10 @@ for (int j = 0; j < numScores; j++){
             } while (scores[j] < 0 || scores[j] > 100);
         }
 
-        // Calculate average and determine grade
         averages[i] = calculateAverage(scores, numScores);
         grades[i] = determineGrade(averages[i]);
     }
 
-    // Display results using the given function
     displayResults(names, averages, grades, numStudents);
 
     return 0;
